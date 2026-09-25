@@ -1,9 +1,5 @@
-# Dhanya Nair — Portfolio V0.1
+# Dhanya Nair Portfolio — V0.2
 
-Private-development version of a responsive Engineering + Data portfolio.
+V0.2 rebuilds the site around the original dark, sophisticated concept: near-black/charcoal surfaces, restrained gold accents, compact editorial typography, denser information layout, and a fuller career timeline.
 
-## Preview locally
-Open `index.html` in a browser. For a local server, run `python -m http.server 8000` inside this folder and open `http://localhost:8000`.
-
-## Before publishing
-Replace placeholder Email, LinkedIn, GitHub and CV links. Review all biography/experience wording and add completed project case studies.
+To preview locally, keep `index.html`, `styles.css`, and `script.js` together and double-click `index.html`.
