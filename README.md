@@ -1,5 +1,13 @@
-# Dhanya Nair Portfolio — V0.2
+# Dhanya Nair Portfolio — V1.9 Smaller Type
 
-V0.2 rebuilds the site around the original dark, sophisticated concept: near-black/charcoal surfaces, restrained gold accents, compact editorial typography, denser information layout, and a fuller career timeline.
+This version keeps the V1.8 colour scheme, background, layout and content unchanged.
 
-To preview locally, keep `index.html`, `styles.css`, and `script.js` together and double-click `index.html`.
+Changes in this pass:
+- reduced overall font sizing
+- reduced hero heading size
+- reduced section heading size
+- reduced project title/body text
+- reduced navigation, labels, contact text and footer text
+- slightly reduced tool-label size for a more compact look
+
+Preview: extract the ZIP and open `index.html`.
