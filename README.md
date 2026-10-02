@@ -1,13 +1,10 @@
-# Dhanya Nair Portfolio — V1.9 Smaller Type
+# Dhanya Nair Portfolio — V2.1
 
-This version keeps the V1.8 colour scheme, background, layout and content unchanged.
+Updates:
+- Added completed Steel Plate Fault Analysis project
+- Added a browser-readable HTML report page with selected charts and findings
+- Linked the project GitHub repository
+- Added a separator line between Learning + Building and Contact
+- Kept the PDF itself out of the website package so there is no direct PDF download link
 
-Changes in this pass:
-- reduced overall font sizing
-- reduced hero heading size
-- reduced section heading size
-- reduced project title/body text
-- reduced navigation, labels, contact text and footer text
-- slightly reduced tool-label size for a more compact look
-
-Preview: extract the ZIP and open `index.html`.
+Note: web content cannot be made impossible to save/copy. The HTML report avoids exposing a downloadable PDF file, but visitors can still save webpages/images or take screenshots.

@@ -623,3 +623,34 @@ footer{
   .project-text h3{font-size:26px}
   .portfolio-card-body h3{font-size:21px}
 }
+
+
+/* V2.1 — Steel Plate Fault Analysis + section separation */
+#contact{
+  border-top:1px solid var(--line);
+}
+
+.portfolio-card-image.steel-preview img{
+  object-fit:contain !important;
+  background:#f7f7f5;
+  padding:12px;
+}
+
+.report-main{padding-top:92px;padding-bottom:110px}
+.report-intro{max-width:860px;margin-bottom:42px}
+.report-intro h1{font-size:clamp(34px,4.5vw,58px);line-height:1.04;letter-spacing:-.045em;margin:14px 0 18px;font-weight:500}
+.report-intro>p{max-width:800px;color:#aebbc5;font-size:14px;line-height:1.7}
+.report-note{border-left:2px solid var(--orange);padding:12px 16px;margin:24px 0;color:#c9d2d9;background:rgba(10,20,30,.55);font-size:13px;line-height:1.65}
+.report-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin:30px 0}
+.report-block{border:1px solid #2b3e4e;border-radius:7px;padding:22px;background:rgba(8,18,28,.86)}
+.report-block.wide{grid-column:1/-1}
+.report-block h2{font-size:18px;margin:0 0 10px;font-weight:500}
+.report-block p,.report-block li{font-size:13px;line-height:1.7;color:#aebbc5}
+.report-block ul{padding-left:18px}
+.report-figure{margin:24px 0 34px;border:1px solid #2c4050;border-radius:8px;overflow:hidden;background:#f7f7f5}
+.report-figure img{display:block;width:100%;height:auto}
+.report-caption{padding:12px 14px;background:#091520;color:#93a5b3;font:10px Consolas,"SFMono-Regular",monospace}
+.report-links{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.report-links a{display:inline-flex;align-items:center;border:1px solid #3a5060;padding:10px 14px;color:#e9eef2;text-decoration:none;font:10px Consolas,"SFMono-Regular",monospace}
+.report-links a:hover{border-color:var(--orange);color:var(--orange)}
+@media(max-width:800px){.report-grid{grid-template-columns:1fr}.report-block.wide{grid-column:auto}}
