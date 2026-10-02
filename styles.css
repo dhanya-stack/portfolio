@@ -654,3 +654,12 @@ footer{
 .report-links a{display:inline-flex;align-items:center;border:1px solid #3a5060;padding:10px 14px;color:#e9eef2;text-decoration:none;font:10px Consolas,"SFMono-Regular",monospace}
 .report-links a:hover{border-color:var(--orange);color:var(--orange)}
 @media(max-width:800px){.report-grid{grid-template-columns:1fr}.report-block.wide{grid-column:auto}}
+
+
+/* V2.2 Chicago Taxi project visuals */
+.case-full-image{display:block;width:100%;height:auto;margin-top:18px;border:1px solid #2b3e4e;border-radius:6px;background:#fff}
+.case-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:18px}
+.case-gallery figure{margin:0;border:1px solid #2b3e4e;border-radius:6px;overflow:hidden;background:#0a1621}
+.case-gallery img{display:block;width:100%;height:auto;background:#fff}
+.case-gallery figcaption{padding:9px 12px;color:#8fa1af;font:9px Consolas,"SFMono-Regular",monospace;text-transform:uppercase;letter-spacing:.06em}
+@media(max-width:760px){.case-gallery{grid-template-columns:1fr}}
