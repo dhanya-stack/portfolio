@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Steel Plate Fault Analysis | Dhanya Nair</title>
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<div class="space-bg" aria-hidden="true"></div>
+<header class="site-header">
+  <div class="shell nav">
+    <a class="brand" href="../index.html">DHANYA NAIR</a>
+    <nav class="links">
+      <a href="../index.html#about">about</a>
+      <a href="../index.html#projects">projects</a>
+      <a href="../index.html#skills">skills</a>
+      <a href="../index.html#learning">learning</a>
+      <a href="../index.html#contact">contact</a>
+    </nav>
+  </div>
+</header>
+<main class="shell report-main">
+  <a class="case-back" href="../index.html#projects">← back to projects</a>
+
+  <section class="report-intro">
+    <p class="case-kicker">COMPLETED · EXPLORATORY DATA ANALYSIS</p>
+    <h1>Steel Plate Fault Analysis</h1>
+    <p>Exploratory analysis of recorded steel plate faults using SQL, pandas and Python visualisation. The project examines how fault categories vary with steel grade, plate thickness, defect size and defect geometry.</p>
+    <div class="case-meta"><span>SQL</span><span>SQLite</span><span>pandas</span><span>Matplotlib</span><span>seaborn</span><span>Kaggle</span></div>
+    <div class="report-note"><strong>Important limitation:</strong> the dataset contains fault instances but not the total number of non-faulty plates inspected. The analysis therefore describes patterns among recorded faults and does not estimate true defect rates or establish causation.</div>
+  </section>
+
+  <div class="report-grid">
+    <section class="report-block">
+      <h2>Project objective</h2>
+      <p>Understand how recorded fault types vary with steel grade, plate thickness, defect size and defect geometry, while keeping the interpretation within the limits of the available data.</p>
+    </section>
+    <section class="report-block">
+      <h2>Dataset</h2>
+      <p>1,941 recorded fault instances across seven fault categories, covering two steel types: A300 and A400. The source is the UCI Machine Learning Repository dataset accessed via Kaggle.</p>
+    </section>
+    <section class="report-block">
+      <h2>Questions explored</h2>
+      <ul>
+        <li>How do fault types differ between A300 and A400 steel?</li>
+        <li>Do different plate thicknesses show different fault distributions?</li>
+        <li>Do fault types have characteristic sizes or shapes?</li>
+      </ul>
+    </section>
+    <section class="report-block">
+      <h2>Analysis approach</h2>
+      <p>SQL was used for grouping and aggregation, pandas for reshaping and descriptive analysis, and Python visualisation for categorical comparisons, grouped patterns, distributions and outliers.</p>
+    </section>
+  </div>
+
+  <figure class="report-figure">
+    <img src="../assets/steel-plate-preview.png" alt="Percentage distributions of recorded steel plate fault types in A300 and A400 steel.">
+    <figcaption class="report-caption">Fault-category percentage distribution by steel grade.</figcaption>
+  </figure>
+
+  <section class="report-block wide">
+    <h2>Steel grade</h2>
+    <p>A300 and A400 show noticeably different distributions of recorded fault categories. In the available records, A300 is dominated by Bumps and Other_Faults, while A400 has large shares of K_Scatch and Other_Faults. These are patterns within recorded faults, not evidence that one steel grade is more fault-prone.</p>
+  </section>
+
+  <figure class="report-figure">
+    <img src="../assets/steel-plate-thickness.png" alt="Heatmap showing recorded steel plate fault-category percentages by thickness.">
+    <figcaption class="report-caption">Fault-category percentages by steel plate thickness.</figcaption>
+  </figure>
+
+  <section class="report-block wide">
+    <h2>Plate thickness</h2>
+    <p>The mix of recorded fault categories changes across thickness groups, but some groups contain very few observations. Percentage differences in small groups therefore need to be interpreted cautiously.</p>
+  </section>
+
+  <figure class="report-figure">
+    <img src="../assets/steel-plate-area.png" alt="Box plot showing pixel-area distribution by steel plate fault type.">
+    <figcaption class="report-caption">Pixel-area distribution by fault type.</figcaption>
+  </figure>
+
+  <section class="report-block wide">
+    <h2>Fault size</h2>
+    <p>K_Scatch stands out clearly in defect size: its median pixel area is about 6,281 pixels, compared with roughly 120–209 pixels for most other fault categories. Stains are particularly small, with a median pixel area of 16.5 pixels. Large outliers were retained because there was not enough evidence to classify them as errors.</p>
+  </section>
+
+  <figure class="report-figure">
+    <img src="../assets/steel-plate-geometry.png" alt="Box plots comparing fault width and fault height across steel plate fault categories.">
+    <figcaption class="report-caption">Fault width and height distributions by fault type.</figcaption>
+  </figure>
+
+  <div class="report-grid">
+    <section class="report-block">
+      <h2>Geometry</h2>
+      <p>Fault width and height were derived from coordinate limits. K_Scatch has a much larger median width than the other classes. An extreme K_Scatch height observation was retained and the plot was zoomed so that typical distributions remained readable.</p>
+    </section>
+    <section class="report-block">
+      <h2>Key conclusion</h2>
+      <p>The dataset is better suited to fault characterisation and classification questions than to estimating manufacturing defect rates or proving causes. Geometry and size also appear useful for distinguishing fault types.</p>
+    </section>
+  </div>
+
+  <section class="report-block wide">
+    <h2>Reflection</h2>
+    <p>The project reinforced the importance of matching conclusions to the evidence actually present in a dataset. It also provided practical experience combining SQL and pandas, reshaping data, comparing percentages rather than only raw counts, and selecting different visualisations for categorical comparisons, grouped patterns and distributions.</p>
+  </section>
+
+  <div class="report-links">
+    <a href="https://github.com/dhanya-stack/Steel-Plate-Fault-Analysis" target="_blank" rel="noreferrer">View project on GitHub ↗</a>
+    <a href="../index.html#projects">Back to portfolio</a>
+  </div>
+</main>
+<footer><div class="shell"><span>© 2026 Dhanya Nair</span><span>engineering · data · learning</span></div></footer>
+</body>
+</html>
